@@ -1,13 +1,11 @@
 :root {
     /* --darkest: #1F2937;
     --dark: #1F2937;
-    --button: #3882F6;
     --light: #E5E7EB;
     --lightest: #F9FAF8; */
 
     --darkest: #32292F;
     --dark: #575366;
-    --button: #5762D5;
     --light: #6E7DAB;
     --lightest: #D1E3DD;
 }
@@ -31,7 +29,7 @@ body {
 
 .header {
     justify-content: center;
-    padding: 8px 48px 64px;
+    padding: 16px 48px 16px;
 }
 
 .footer {
@@ -59,26 +57,25 @@ ul {
 /*=============================================================================*/
 .content {
     flex-grow: 1;
-    background-color: var(--lightest);
 }
 
-.main-1, .main-2, .main-3, .main-4 {
+.main-1, .main-2, .main-3 {
     display: flex;
 }
 
 .main-1 {
     flex-wrap: wrap;
-    background-color: var(--darkest);
+    background-color: var(--dark);
     justify-content: center;
-    padding: 0 0 32px;
+    padding: 8 0 32px;
     gap: 16px;
 }
 
 .hero-text {
     flex: 1 1 25%;
-    background-color: var(--darkest); 
+    background-color: var(--dark); 
     color: var(--lightest); 
-    padding: 0 48px;
+    padding: 16px 48px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -89,18 +86,9 @@ ul {
     font-weight: bold;
 }
 
-button {
-    border: 0;
-    padding: 8px; 
-    background-color: var(--button);
-    color: var(--lightest);
-    border-radius: 4px;
-    max-width: 100px;
-}
-
 .hero-img-container {
     flex: 1 1 50%;
-    background-color: var(--darkest);  
+    background-color: var(--dark);  
     padding: 16px 48px;
     max-width: 75%;
     display: flex;
@@ -118,13 +106,7 @@ button {
     align-items: center;
     padding: 32px 48px 32px;
     gap: 32px;
-    background-color: var(--lightest);
-}
-
-.info-header {
-    color: var(--darkest);
-    font-size: 24px;
-    font-weight: bold;
+    background-color: var(--light);
 }
 
 .info-cards {
@@ -135,9 +117,10 @@ button {
 }
 
 .card {
-    flex-basis: 20%;
+    padding: 8px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex: 1;
     gap: 16px;
     justify-content: center;
     align-items: center;
@@ -146,70 +129,35 @@ button {
 .card-img {
     max-width: 100%;
     border-radius: 8px;
-    border: 5px solid var(--light)
+    border: 5px solid var(--dark)
 }
+
 
 /*=============================================================================*/
 .main-3 {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 32px 48px;
-    background-color: var(--light);
-}
-
-.quote-container {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.quote {
-    font-size: 24px;
-    font-style: italic;
-    font-weight: 250;
-    color: var(--lightest);
-}
-
-.quoter {
-    font-size: 18px;
-    margin-left: auto;
-    color: var(--darkest);
-}
-
-/*=============================================================================*/
-.main-4 {
-    justify-content: center;
-    align-items: center;
-    padding: 32px 48px 32px;
-    background-color: var(--lightest);
-}
-
-.action-card {
-    display: flex;
-    gap: 16px;
-    justify-content: space-between;
-    background-color: var(--darkest);
     flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--dark);
+    padding: 8 0 32px;
+}
+
+
+.contact-card {
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark);
     padding: 32px;
-    border-radius: 16px;
     color: var(--lightest);
 }
 
-.action-left {
-    flex-basis: 50%;
-    min-width: 250px;
-}
-
-.action-right {
-    flex-basis: 50%;
-}
-
-.action-header {
+.contact-header {
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
-.action-subtext {
+.contact-subtext {
+    padding: 16px;
     font-weight: 250;
+    text-align: center;
 }
