@@ -90,7 +90,7 @@ ul {
     flex: 1 1 50%;
     background-color: var(--dark);  
     padding: 16px 48px;
-    max-width: 75%;
+    max-width: 25%;
     display: flex;
 }
 
