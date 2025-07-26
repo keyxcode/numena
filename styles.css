@@ -27,44 +27,41 @@ body {
 }
 
 /*=============================================================================*/
-.header,
-.footer {
+header,
+footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: var(--darkest);
   color: var(--lightest);
   font-size: large;
-  justify-content: center;
   padding: 2rem;
 }
 
-.header {
+header {
   font-size: 3rem;
   font-family: "Monoton", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.footer {
+footer {
   padding: 1rem;
 }
 
 /*=============================================================================*/
-.content {
+main {
   flex-grow: 1;
 }
 
-.main-1,
-.main-2,
-.main-3 {
+.section-1,
+.section-2{
   display: flex;
 }
 
-.main-1 {
+.section-1 {
   flex-direction: column;
   background-color: var(--dark);
-  justify-content: center;
   gap: 2rem;
   padding: 2rem;
 }
@@ -94,7 +91,7 @@ p {
 }
 
 /*=============================================================================*/
-.main-2 {
+.section-2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -111,7 +108,6 @@ p {
 
 .card {
   padding: 8px;
-  display: flex;
   flex-direction: row;
   flex: 1;
   gap: 16px;
@@ -125,27 +121,16 @@ p {
 }
 
 /*=============================================================================*/
-.main-3 {
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: var(--dark);
-  padding: 8 0 32px;
-}
 
 .contact-card {
   flex-direction: column;
-  align-items: center;
   padding: 2rem;
   color: var(--lightest);
+  text-align: center;
 }
 
 .contact-header {
   font-weight: bold;
-  text-align: center;
-}
-
-.contact-subtext {
-  text-align: center;
 }
 
 /*=============================================================================*/
