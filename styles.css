@@ -17,6 +17,12 @@
     --lightest: #D1E3DD; */
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -50,44 +56,56 @@ footer {
 }
 
 /*=============================================================================*/
-.section-1,
-.section-2 {
-  display: flex;
-}
-
 .section-1 {
-  flex-direction: column;
-  background-color: var(--dark);
-  gap: 2rem;
-  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.hero-img-container {
+.section-1 > * {
+  flex-grow: 1;
+}
+
+.col-1,
+.col-2 {
   display: flex;
+}
+
+.col-1 {
   justify-content: center;
+  background-color: var(--dark);
+  padding: 1rem;
+  order: 2;
 }
 
 .hero-img {
-  max-width: 40%;
-  border-radius: 0.5rem;
+  max-width: 100%;
   object-fit: contain;
 }
 
+.col-2 {
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--mid);
+  padding: 1rem;
+  gap: 2rem;
+  order: 1;
+}
+
 .hero-text-container {
-  color: var(--lightest);
-  font-size: large;
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  color: var(--light);
+  font-size: large;
 }
 
 p {
-  width: 50%;
-  margin: 0;
-  text-align: center;
+  width: 90%;
+  text-align: left;
 }
 
 /*=============================================================================*/
 .section-2 {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -138,10 +156,20 @@ p {
 /*=============================================================================*/
 /* Small phones */
 @media (max-width: 600px) {
+  .section-1 {
+    grid-template-columns: 1fr;
+  }
+  .col-1 {
+    order: 1;
+  }
+  .col-2 {
+    order: 2;
+  }
   .hero-img {
     max-width: 100%;
   }
   p {
     width: 100%;
+    text-align: center;
   }
 }
