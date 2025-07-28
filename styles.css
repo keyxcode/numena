@@ -129,6 +129,12 @@ p {
   text-align: center;
 }
 
+.contact-card a {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: inherit;
+}
+
 .contact-header {
   font-weight: bold;
 }
