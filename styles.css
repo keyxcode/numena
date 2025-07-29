@@ -13,10 +13,6 @@
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: var(--darkest);
   min-height: 100vh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -26,13 +22,11 @@ body {
 /*=============================================================================*/
 header,
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 2rem;
   background-color: var(--darkest);
   color: var(--lightest);
   font-size: large;
-  padding: 2rem;
+  text-align: center;
 }
 
 header {
@@ -40,10 +34,6 @@ header {
   font-family: "Monoton", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-footer {
-  padding: 1rem;
 }
 
 /*=============================================================================*/
@@ -61,24 +51,22 @@ main {
   max-width: 1024px;
 }
 
-.section-1 > * {
-  flex-grow: 1;
-}
-
 .col-1,
 .col-2 {
   display: flex;
 }
 
 .col-1 {
-  justify-content: center;
   background-color: var(--dark);
+  justify-content: center;
   padding: 1rem;
   order: 2;
 }
 
-.hero-img {
+img {
   max-width: 100%;
+  max-height: 80vh;
+  border-radius: 0.5rem;
   object-fit: contain;
 }
 
@@ -91,16 +79,11 @@ main {
   order: 1;
 }
 
-.hero-text-container {
-  display: flex;
-  justify-content: left;
-  color: var(--light);
-  font-size: large;
-}
-
 p {
   width: 85%;
   text-align: left;
+  color: var(--light);
+  font-size: large;
 }
 
 /*=============================================================================*/
@@ -119,27 +102,14 @@ p {
   max-width: 1200px;
 }
 
-img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
 /*=============================================================================*/
-.contact-card {
-  flex-direction: column;
-  padding: 2rem;
-  color: var(--lightest);
-  text-align: center;
-}
-
-.contact-card a {
-  color: inherit;
-  text-decoration: underline;
-  font-weight: inherit;
-}
-
 .contact-header {
   font-weight: bold;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 /*=============================================================================*/
@@ -153,9 +123,6 @@ img {
   }
   .col-2 {
     order: 2;
-  }
-  .hero-img {
-    max-width: 100%;
   }
   p {
     width: 100%;
