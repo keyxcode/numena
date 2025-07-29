@@ -56,9 +56,18 @@ footer {
 }
 
 /*=============================================================================*/
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background: linear-gradient(to right, var(--mid) 50%, var(--dark) 50%);
+}
+
 .section-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
 }
 
 .section-1 > * {
@@ -99,7 +108,7 @@ footer {
 }
 
 p {
-  width: 90%;
+  width: 85%;
   text-align: left;
 }
 
@@ -154,8 +163,8 @@ p {
 }
 
 /*=============================================================================*/
-/* Small phones */
-@media (max-width: 600px) {
+/* Small tablets and under */
+@media (max-width: 768px) {
   .section-1 {
     grid-template-columns: 1fr;
   }
