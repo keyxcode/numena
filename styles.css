@@ -101,6 +101,14 @@ p {
   max-width: 1200px;
 }
 
+
+.photo-strip a {
+  color: gray;
+  text-decoration: none;
+  text-align: center;
+  grid-column: 1/-1;
+}
+
 /*=============================================================================*/
 footer {
   font-size: large;
