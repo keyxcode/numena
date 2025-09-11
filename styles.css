@@ -102,7 +102,7 @@ p {
 }
 
 .photo-strip a {
-  color: gray;
+  color: var(--dark);
   text-decoration: none;
   text-align: right;
   font-style: italic;
