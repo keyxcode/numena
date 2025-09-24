@@ -101,6 +101,15 @@ p {
   max-width: 1200px;
 }
 
+.photo-strip a {
+  color: var(--dark);
+  text-decoration: none;
+  text-align: right;
+  font-style: italic;
+  font-size: small;
+  grid-column: 1/-1;
+}
+
 /*=============================================================================*/
 footer {
   font-size: large;
